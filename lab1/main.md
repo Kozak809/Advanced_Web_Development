@@ -61,7 +61,7 @@
 
 1. Перешёл на https://en.wikipedia.org/wiki/Special:Search
 2. Выполнил поиск "browser"
-3. Зашёл в Network (`Pfi`k d ytndjrh`)
+3. Зашёл в Network 
 4. При вводе слова предложило автодополнение:
 
 ![alt text](image-9.png)
