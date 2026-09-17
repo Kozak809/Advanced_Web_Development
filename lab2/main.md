@@ -13,7 +13,6 @@ PS C:\Users\Kozak\Desktop\labs\year2\Advanced_Web_Development> php lab2/index.ph
 <?php
 echo "Hello, World with echo!";
 print "Hello, World with print!";
-?>
 ```
 И запустите
 ```cmd
