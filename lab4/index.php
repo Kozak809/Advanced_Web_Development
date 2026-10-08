@@ -3,15 +3,6 @@
 declare(strict_types=1);
 
 /**
- * Лабораторная работа №4: Массивы и Функции
- * Система управления банковскими транзакциями и Галерея изображений
- */
-
-// ==========================================
-// ЗАДАНИЕ 1.2: Создание массива транзакций
-// ==========================================
-
-/**
  * @var array<int, array{id: int, date: string, amount: float, description: string, merchant: string}> $transactions
  */
 $transactions = [
@@ -44,10 +35,6 @@ $transactions = [
         "merchant" => "StreamNow",
     ],
 ];
-
-// ==========================================
-// ЗАДАНИЕ 1.4: Реализация функций с PHPDoc
-// ==========================================
 
 /**
  * Вычисляет общую сумму всех транзакций.
@@ -100,7 +87,7 @@ function findTransactionById(int $id): ?array
 }
 
 /**
- * Ищет транзакцию по идентификатору с помощью функции array_filter (на высшую оценку).
+ * Ищет транзакцию по идентификатору с помощью функции array_filter.
  *
  * @param int $id Идентификатор транзакции
  * @return array{id: int, date: string, amount: float, description: string, merchant: string}|null Найденная транзакция или null
@@ -148,26 +135,18 @@ function addTransaction(int $id, string $date, float $amount, string $descriptio
     ];
 }
 
-// Добавим новую транзакцию через функцию
 addTransaction(5, "2024-05-18", 89.20, "Books and stationery", "BookCity");
 
-// ==========================================
-// ЗАДАНИЕ 1.5: Сортировка транзакций
-// ==========================================
-
-// Копия для сортировки по дате (по возрастанию)
 $transactionsByDate = $transactions;
 usort($transactionsByDate, function (array $a, array $b): int {
     return strtotime($a['date']) <=> strtotime($b['date']);
 });
 
-// Копия для сортировки по сумме (по убыванию)
 $transactionsByAmount = $transactions;
 usort($transactionsByAmount, function (array $a, array $b): int {
     return $b['amount'] <=> $a['amount'];
 });
 
-// Демонстрация поиска
 $searchSampleDescription = "Dinner";
 $foundByDesc = findTransactionByDescription($searchSampleDescription);
 $foundByIdForeach = findTransactionById(3);
@@ -301,8 +280,7 @@ $foundByIdFilter = findTransactionByIdFilter(3);
 
 <main>
 
-    <!-- ЗАДАНИЕ 1.3: Вывод списка транзакций -->
-    <h2 id="transactions">Задание 1.3: Основной список транзакций (с добавленной транзакцией #5)</h2>
+    <h2 id="transactions">Задание 1.3: Основной список транзакций</h2>
     <table>
         <thead>
             <tr>
@@ -332,7 +310,6 @@ $foundByIdFilter = findTransactionByIdFilter(3);
         </tbody>
     </table>
 
-    <!-- ЗАДАНИЕ 1.5: Сортировка по дате -->
     <h2 id="sort-date">Задание 1.5: Транзакции, отсортированные по дате (usort)</h2>
     <table>
         <thead>
@@ -359,7 +336,6 @@ $foundByIdFilter = findTransactionByIdFilter(3);
         </tbody>
     </table>
 
-    <!-- ЗАДАНИЕ 1.5: Сортировка по сумме -->
     <h2 id="sort-amount">Задание 1.5: Транзакции, отсортированные по сумме (по убыванию)</h2>
     <table>
         <thead>
@@ -384,7 +360,6 @@ $foundByIdFilter = findTransactionByIdFilter(3);
         </tbody>
     </table>
 
-    <!-- Демонстрация функций поиска -->
     <h2 id="search">Задание 1.4: Демонстрация работы функций поиска</h2>
     <div class="code-box">
         <p><strong>Поиск по описанию "<?= $searchSampleDescription ?>":</strong></p>
@@ -397,7 +372,6 @@ $foundByIdFilter = findTransactionByIdFilter(3);
         <pre><?= htmlspecialchars(print_r($foundByIdFilter, true)) ?></pre>
     </div>
 
-    <!-- ЗАДАНИЕ 2: Работа с файловой системой и галерея -->
     <h2 id="gallery">Задание 2: Галерея изображений из каталога "image" (scandir)</h2>
     <div class="gallery">
         <?php
