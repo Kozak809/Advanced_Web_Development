@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "date": "2026-10-28",
+        "amount": 54.9,
+        "description": "Покупка продуктов",
+        "merchant": "SuperMart",
+        "category": "Продукты"
+    },
+    {
+        "id": 2,
+        "date": "2026-10-21",
+        "amount": 12.5,
+        "description": "Поездка на такси",
+        "merchant": "CityTaxi",
+        "category": "Транспорт"
+    },
+    {
+        "id": 3,
+        "date": "2026-10-14",
+        "amount": 899,
+        "description": "Подписка на онлайн-кинотеатр",
+        "merchant": "StreamNow",
+        "category": "Развлечения"
+    },
+    {
+        "id": 5,
+        "date": "2026-09-27",
+        "amount": 1200,
+        "description": "Оплата электроэнергии",
+        "merchant": "ElectroService",
+        "category": "Коммунальные услуги"
+    },
+    {
+        "id": 6,
+        "date": "2026-09-18",
+        "amount": 75,
+        "description": "Обед в ресторане",
+        "merchant": "Local Restaurant",
+        "category": "Рестораны"
+    },
+    {
+        "id": 7,
+        "date": "2026-09-09",
+        "amount": 430.75,
+        "description": "Книги и канцелярия",
+        "merchant": "BookCity",
+        "category": "Образование"
+    },
+    {
+        "id": 8,
+        "date": "2026-08-30",
+        "amount": 59.99,
+        "description": "Мобильная связь",
+        "merchant": "TelecomPlus",
+        "category": "Связь"
+    },
+    {
+        "id": 9,
+        "date": "2026-08-12",
+        "amount": 320,
+        "description": "Спортивная экипировка",
+        "merchant": "SportLife",
+        "category": "Спорт"
+    },
+    {
+        "id": 10,
+        "date": "2026-07-25",
+        "amount": 150,
+        "description": "Авиабилеты",
+        "merchant": "AirTravel",
+        "category": "Путешествия"
+    },
+    {
+        "id": 11,
+        "date": "2026-11-04",
+        "amount": 99.9,
+        "description": "Кофе и десерт",
+        "merchant": "CoffeeHouse",
+        "category": "Рестораны"
+    },
+    {
+        "id": 12,
+        "date": "2026-11-05",
+        "amount": 111,
+        "description": "qweqwe",
+        "merchant": "qweqweqwe",
+        "category": "Продукты"
+    }
+]
